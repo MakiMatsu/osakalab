@@ -1,0 +1,44 @@
+@charset "utf-8";
+body {
+  background-color: #cccccc; /*ページ全体の背景色*/
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+  line-height: 2;
+  color: #333333;
+}
+div#pagebody {
+  background-color: #ffffff; /*内容全体の背景色*/
+}
+/*============================================
+メインメニュー
+============================================*/
+ul#menu {
+  width: 960px;
+  height: 50px; /*メインメニュー部分の幅と高さ*/
+}
+#menu li {
+  list-style-type: none; /*リストマーカー無しにする*/
+  display: inline; /*リスト項目をインライン表示にする*/
+}
+#menu li a {
+  background-color: navy; /*背景色*/
+  background-image: url(images/bg_menu1.png); /*背景画像を指定*/
+  background-repeat: no-repeat; /*背景画像を繰り返さない*/
+  color: #ffffff; /*文字色*/
+  display: block; /*リンク部分をブロック表示にする*/
+  float: left; /*リスト項目を横に並べる*/
+  width: 240px;
+  height: 35px; /*幅と高さ*/
+  padding: 15px 0px 0px 0px; /*上パディング*/
+  text-align: center; /*テキストをセンター揃えにする*/
+  text-decoration: none; /*リンク部分を下線無しにする*/
+}
+#menu li a:hover {
+  background-color: #000066; /*リンクにマウスが乗ったら背景色を変更する*/
+  background-image: url(images/bg_menu2.png); /*リンクにマウスが乗ったら背景画像を変更する*/
+}
+
+#osakalab_logo {
+  width: 10%;
+  height: 10%;
+}
