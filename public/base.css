@@ -1,4 +1,14 @@
 @charset "utf-8";
+
+/*============================================
+全般的なスタイル
+============================================*/
+
+* {
+  margin: 0;
+  padding: 0; /*全要素のマージン・パディングをリセット*/
+}
+
 body {
   background-color: #cccccc; /*ページ全体の背景色*/
   font-size: 100%;
@@ -7,31 +17,55 @@ body {
   color: #333333;
 }
 div#pagebody {
+  width: 1700px;
+  margin: 0 auto; /*内容全体をセンタリング*/
   background-color: #ffffff; /*内容全体の背景色*/
 }
+img {
+  border: 0;
+} /*画像のボーダーを0にする*/
+
+/*============================================
+ヘッダ
+============================================*/
+div#header {
+  height: 150px; /*ヘッダ部分の高さ*/
+}
+div#header h1 {
+  padding: 10px 5px 5px 20px; /*見出しの位置調整*/
+  font-size: 18px; /*フォントのサイズ*/
+  font-family: Arial, Helvetica, sans-serif; /*フォントの種類*/
+}
+div#header h1 a {
+  text-decoration: none;
+} /*リンクの下線を無くす*/
+
 /*============================================
 メインメニュー
 ============================================*/
 ul#menu {
-  width: 960px;
+  width: 1650px;
   height: 50px; /*メインメニュー部分の幅と高さ*/
+  margin: 0px 20px; /*上下マージン0px、左右マージン20px*/
 }
 #menu li {
   list-style-type: none; /*リストマーカー無しにする*/
   display: inline; /*リスト項目をインライン表示にする*/
+  margin: 0px, 2px;
 }
 #menu li a {
   background-color: navy; /*背景色*/
-  background-image: url(images/bg_menu1.png); /*背景画像を指定*/
+  /*background-image: url(images/bg_menu1.png); /*背景画像を指定*/
   background-repeat: no-repeat; /*背景画像を繰り返さない*/
   color: #ffffff; /*文字色*/
   display: block; /*リンク部分をブロック表示にする*/
   float: left; /*リスト項目を横に並べる*/
-  width: 240px;
+  width: 328px;
   height: 35px; /*幅と高さ*/
   padding: 15px 0px 0px 0px; /*上パディング*/
   text-align: center; /*テキストをセンター揃えにする*/
   text-decoration: none; /*リンク部分を下線無しにする*/
+  margin: 1px;
 }
 #menu li a:hover {
   background-color: #000066; /*リンクにマウスが乗ったら背景色を変更する*/
@@ -39,6 +73,16 @@ ul#menu {
 }
 
 #osakalab_logo {
-  width: 10%;
-  height: 10%;
+  width: 8%;
+  height: 8%;
+}
+
+#osakalab_index_img {
+  margin: 5px 20px; /*マージン*/
+}
+
+.center {
+  /* border: 1px antiquewhite #aaa;
+  background-color: antiquewhite #aaa; */
+  text-align: center;
 }

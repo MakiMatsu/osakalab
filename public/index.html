@@ -2,51 +2,83 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="base.css"/>
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:500|Roboto|Sawarabi+Gothic');
-    </style>
-    <!-- <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#000000" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
-    <title>Osaka Lab</title>
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet"
+      href="node_modules/material-components-web/dist/material-components-web.css">
+    </link>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=M+PLUS+1p:500|Roboto|Sawarabi+Gothic");
+  </style>
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Osaka Lab</title>
   </head>
   <body>
     <div id="root"></div>
     <div id="pagebody">
-    <h1>
-        <img id="osakalab_logo" src="osakalab_logo.png"></img>
-        Osaka Lab
-    </h1>
-    <!-- メインメニュー -->
-    <ul id="menu">
+      <!-- ヘッダ -->
+      <div id="header">
+        <h1>
+          <a href="index.html">
+            <img id="osakalab_logo" src="osakalab_logo.png" alt="Osaka Lab"/>
+          </a>
+        </h1>
+      </div>
+
+      <h2 class="mdc-typography--display2">Hello, Material Components!</h2>
+      <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
+        <input type="text" class="mdc-textfield__input" id="demo-input">
+        <label for="demo-input" class="mdc-textfield__label">Tell us how you feel!</label>
+      </div>
+
+      <!-- メインメニュー -->
+      <ul id="menu">
         <li><a href="index.html">ホーム</a></li>
         <li><a href="profile.html">Lab紹介</a></li>
         <li><a href="product.html">実績・技術</a></li>
+        <li><a href="blog.html">blog</a></li>
         <li><a href="contact.html">お問合せ</a></li>
-    </ul>
-    <h2>新着情報</h2>
-    <h3>新商品のご案内</h3>
-    <p>
-    あいうえおかきくけこさしすせそ（中略）
-    </p>
-    <h3>展示会への出展</h3>
-    <p>
-    あいうえおかきくけこさしすせそ（中略）
-    </p>
-    <h3>環境への取り組み</h3>
-    <p>
-    あいうえおかきくけこさしすせそ（中略）
-    </p>
-    <small
-      >© Pasona Tech,
-      inc.IT・ものづくりエンジニアの転職・派遣求人情報なら【パソナテック】</small
-    >
-  </div>
+      </ul>
+
+      <!-- ヘッダ画像 -->
+      <div id="osakalab_index_img">
+        <img
+          src="./images/mainVisual.png"
+          alt="株式会社パソナテック　大阪Lab"
+          width="1650px"
+          height="700px"
+        />
+      </div>
+      <h2>
+          <div class="center">
+        <i class="material-icons"> laptop_chromebook </i>
+        お知らせ
+        <div>
+      </h2>
+      <h3>
+        新商品のご案内</h3>
+      <p>
+        <!-- <img src="images/oshirase.png" alt="新着情報画像" /> -->
+        あいうえおかきくけこさしすせそ（中略）
+      </p>
+      <h3>イベントのお知らせ</h3>
+      <p>
+        <!-- <img src="images/event.jpg" alt="展示会画像" /> -->
+        あいうえおかきくけこさしすせそ（中略）
+      </p>
+      <h3>
+        <!-- <img src="images/kankyo.png" alt="環境画像" /> 環境への取り組み</h3> -->
+      <p>あいうえおかきくけこさしすせそ（中略）</p>
+      <small
+        >© Pasona Tech,
+        inc.IT・ものづくりエンジニアの転職・派遣求人情報なら【パソナテック】</small
+      >
+    </div>
+
+    <script src="node_modules/material-components-web/dist/material-components-web.js"></script>
+    <script>mdc.autoInit()</script>
+
   </body>
 </html>
